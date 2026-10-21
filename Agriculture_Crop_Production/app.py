@@ -11,9 +11,9 @@ st.write("This interactive application uses a **Random Forest Regressor (96.6% A
 
 @st.cache_resource
 def load_assets():
-    with open("crop_model.pk1", "rb") as model_file:
+    with open("crop_model.pkl", "rb") as model_file:
         model = pickle.load(model_file)
-    with open("model_columns.pk1", "rb") as columns_file:
+    with open("model_columns.pkl", "rb") as columns_file:
         model_columns = pickle.load(columns_file)
     return model, model_columns
 
