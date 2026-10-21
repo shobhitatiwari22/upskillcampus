@@ -7,7 +7,7 @@ import numpy as np
 st.set_page_config(page_title="Indian Crop Yield Predictor", page_icon="🌾", layout="centered")
 
 st.title("🌾 Indian Crop Yield Prediction App")
-st.write("This interactive application uses a **Random Forest Regressor (96.6% Accuracy)** to predict agricultural crop yields based on input metrics.")
+st.write("This interactive application predicts regional agricultural crop yields across India based on your specific cultivation input metrics.")
 
 @st.cache_resource
 def load_assets():
