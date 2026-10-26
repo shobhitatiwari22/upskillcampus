@@ -68,7 +68,7 @@ st.markdown("""
 # 3. SECURELY LOAD DEPLOYED PRODUCTION ARTIFACTS
 @st.cache_resource
 def load_production_model():
-    base_dir = os.path.dirname(_file_)
+    base_dir = os.path.dirname(__file__)
     model_path = os.path.join(base_dir, 'traffic_production_model.pkl')
     return joblib.load(model_path)
 
