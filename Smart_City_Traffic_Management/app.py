@@ -164,7 +164,7 @@ avg_flow = int(round(forecast_df['Predicted_Vehicles'].mean()))
 daily_aggregate = int(forecast_df['Predicted_Vehicles'].sum())
 
 with m_col1:
-st.markdown(f"""
+    st.markdown(f"""
         <div class="metric-card">
             <div class="metric-label">🔥 Peak Congestion Spike</div>
             <div class="metric-value">{peak_load} <span style='font-size:1rem; color:#8892b0;'>vehicles</span></div>
