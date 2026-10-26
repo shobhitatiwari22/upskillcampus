@@ -148,7 +148,7 @@ forecast_df['Predicted_Vehicles'] = forecast_df['Predicted_Vehicles'].clip(lower
 # 6. APP MAIN WORKSPACE DISPLAY HEADER
 st.markdown(f"""
     <div style='background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); padding: 25px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.05);'>
-        <h1 style='margin:0; color:#ffffff; font-size:2.2rem;'>🏙️ Intelligent Grid Management Operations</h1>
+        <h1 style='margin:0; color:#ffffff; font-size:2.2rem;'>🏙️ Smart City AI Traffic Hub</h1>
         <p style='margin:5px 0 0 0; color:#94a3b8; font-size:1rem;'>Live predictive dispatch timelines for <b>Junction {junction}</b> on <b>{selected_date.strftime('%A, %B %d, %Y')}</b></p>
     </div>
 """, unsafe_allow_html=True)
