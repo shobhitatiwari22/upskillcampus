@@ -48,9 +48,10 @@ st.markdown("""
             font-weight: 700;
         }
         .metric-desc {
-            font-size: 0.75rem;
-            color: #e2e8f0;
+            font-size: 0.8rem;
+            color: #1e293b;
             margin-top: 5px;
+            font-weight
         }
         
        .sidebar-label {
@@ -163,11 +164,11 @@ avg_flow = int(round(forecast_df['Predicted_Vehicles'].mean()))
 daily_aggregate = int(forecast_df['Predicted_Vehicles'].sum())
 
 with m_col1:
-    st.markdown(f"""
+st.markdown(f"""
         <div class="metric-card">
             <div class="metric-label">🔥 Peak Congestion Spike</div>
             <div class="metric-value">{peak_load} <span style='font-size:1rem; color:#8892b0;'>vehicles</span></div>
-            <div class="metric-desc">Forecasted spike boundary occurs at <b>{time_string}</b></div>
+            <div style='color: #0f172a !important; font-size: 0.8rem; font-weight: 500; margin-top: 5px;'>Forecasted spike boundary occurs at <b>{time_string}</b></div>
         </div>
     """, unsafe_allow_html=True)
 
@@ -176,7 +177,7 @@ with m_col2:
         <div class="metric-card">
             <div class="metric-label">⚡ Average Daily Flow</div>
             <div class="metric-value">{avg_flow} <span style='font-size:1rem; color:#8892b0;'>units/hr</span></div>
-            <div class="metric-desc">Steady baseline operational flow calculated across 24h</div>
+            <div style='color: #0f172a !important; font-size: 0.8rem; font-weight: 500; margin-top: 5px;'>Steady baseline operational flow calculated across 24h</div>
         </div>
     """, unsafe_allow_html=True)
 
@@ -185,7 +186,7 @@ with m_col3:
         <div class="metric-card">
             <div class="metric-label">📊 Volumetric Aggregate</div>
             <div class="metric-value">{daily_aggregate:,} <span style='font-size:1rem; color:#8892b0;'>total vehicles</span></div>
-            <div class="metric-desc">Total footprints traversing this sector timeline loop</div>
+            <div style='color: #0f172a !important; font-size: 0.8rem; font-weight: 500; margin-top: 5px;'>Total footprints traversing this sector timeline loop</div>
         </div>
     """, unsafe_allow_html=True)
 
