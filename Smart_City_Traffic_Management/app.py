@@ -36,7 +36,7 @@ st.markdown("""
         }
         .metric-label {
             font-size: 0.85rem;
-            color: #8892b0;
+            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 5px;
@@ -49,20 +49,24 @@ st.markdown("""
         }
         .metric-desc {
             font-size: 0.75rem;
-            color: #a8b2d1;
+            color: #ffffff;
             margin-top: 5px;
         }
         
         .section-title {
             font-weight: 700;
-            color: #64ffda;
-            margin-top: 30px;
+            color: #ffffff;
+            margin-top: 20px;
             margin-bottom: 15px;
+            border-radius: 6px;
             border-left: 4px solid #64ffda;
-            padding-left: 12px;
-            text-shadow: 0px 0px 8px rgba(100, 255, 218, 0.2);
+            padding-left: 8px 15px;
+            background: rgba(255, 255, 255, 0.05);
             letter-spacing: 0.5px;
             font-size: 1.3rem;
+        }
+        [data-tested="stSidebar"]*{
+            color: #ffffff;
         }
     </style>
 """, unsafe_allow_html=True)
