@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 # 1. PAGE LAYOUT & GROUNDWORK CONFIGURATION
 st.set_page_config(
     page_title="AI SmartCity Traffic Hub",
-    page_icon="🏙️",
+    page_icon="🚦",
     layout="wide",
     initial_sidebar_state="expanded"
 )
