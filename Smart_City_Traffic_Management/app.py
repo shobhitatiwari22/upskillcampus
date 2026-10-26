@@ -49,24 +49,34 @@ st.markdown("""
         }
         .metric-desc {
             font-size: 0.75rem;
-            color: #ffffff;
+            color: #e2e8f0;
             margin-top: 5px;
         }
         
-        .section-title {
-            font-weight: 700;
-            color: #ffffff;
-            margin-top: 20px;
-            margin-bottom: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #64ffda;
-            padding-left: 8px 15px;
-            background: rgba(255, 255, 255, 0.05);
-            letter-spacing: 0.5px;
-            font-size: 1.3rem;
+       .sidebar-label {
+            font-size: 1.3rem !important;
+            font-weight: 700 !important;
+            color: #ffffff !important;
+            padding-bottom: 5px;
+            display: block;
         }
-        [data-tested="stSidebar"]*{
-            color: #ffffff;
+        
+        /* Modern Title Styling Card */
+        .custom-title-box {
+            background-color: #1e293b !important;
+            border-left: 5px solid #64ffda !important;
+            padding: 12px 20px !important;
+            border-radius: 6px !important;
+            margin-top: 25px !important;
+            margin-bottom: 15px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+        }
+        .custom-title-text {
+            color: #ffffff !important;
+            font-weight: 700 !important;
+            font-size: 1.25rem !important;
+            margin: 0 !important;
+            letter-spacing: 0.5px !important;
         }
     </style>
 """, unsafe_allow_html=True)
