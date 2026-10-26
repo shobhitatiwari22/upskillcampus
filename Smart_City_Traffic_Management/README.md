@@ -37,7 +37,10 @@ The production dashboard is fully compiled, hosted, and live on the internet via
 
 ## 🧠 Model Information
 * **Predictive Architecture:** Optimized Gradient Boosted Decision Tree (GBDT) array natively tuned to map complex, non-linear seasonal waves.
-* **Temporal Feature Engineering:** Raw time dimensions are converted into 2D circular wave topologies using Trigonometric Sine and Cosine encodings ($\text{Hour\_sin} = \sin(2\pi \times \text{Hour} / 24)$, etc.) to capture adjacent temporal patterns seamlessly.
+* **Temporal Feature Engineering:** Raw time dimensions are converted into 2D circular wave topologies using Trigonometric Sine and Cosine encodings
+* * **Temporal Feature Engineering:** Raw time dimensions are converted into 2D circular wave topologies using Trigonometric Sine and Cosine encodings:
+  * `Hour_sin` = $\sin(2\pi \times \text{Hour} / 24)$
+  * `Hour_cos` = $\cos(2\pi \times \text{Hour} / 24)$ to capture adjacent temporal patterns seamlessly.
 * **Evaluation Metrics (Unseen Validation Data):**
   * **Authentic $R^2$ Accuracy Score:** **0.97** (Explaining 97% of total vehicular sequence variance without historical data leakage)
   * **Mean Absolute Error (MAE):** **2.91 vehicles**
@@ -65,7 +68,9 @@ The model was trained on historical smart city grid logging profiles monitoring 
 ## 📸 Application Preview
 Click on any of the linkable preview placeholders below to inspect the interface layout, metric components, and interactive graphing engines
 
-<a href="https://streamlit.app" target="_blank">
-  <img width="1600" height="779" alt="Prediction Result" src="<img width="1901" height="876" alt="image" src="https://github.com/user-attachments/assets/29840790-9d6a-42ab-909e-1029a43fcc77" />
+<a href="https://smartcity-traffic-forecast.streamlit.app/" target="_blank">
+width="1890" height="876" alt="image" src="https://github.com/user-attachments/assets/4eafbfc3-f7fc-4ef4-b197-0f902a27acd1" />
+" />
 </a>
+
 
