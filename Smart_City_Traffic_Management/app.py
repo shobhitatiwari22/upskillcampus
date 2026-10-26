@@ -55,12 +55,14 @@ st.markdown("""
         
         .section-title {
             font-weight: 700;
-            color: #ccd6f6;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            color: #64ffda;
+            margin-top: 30px;
+            margin-bottom: 15px;
             border-left: 4px solid #64ffda;
-            padding-left: 10px;
-            font-size: 1.2rem;
+            padding-left: 12px;
+            text-shadow: 0px 0px 8px rgba(100, 255, 218, 0.2);
+            letter-spacing: 0.5px;
+            font-size: 1.3rem;
         }
     </style>
 """, unsafe_allow_html=True)
