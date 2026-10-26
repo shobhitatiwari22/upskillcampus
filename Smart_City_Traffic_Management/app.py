@@ -36,7 +36,7 @@ st.markdown("""
         }
         .metric-label {
             font-size: 0.85rem;
-            color: #ffffff;
+            color: #1e293b;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 5px;
@@ -44,8 +44,8 @@ st.markdown("""
         }
         .metric-value {
             font-size: 1.8rem;
-            color: #64ffda;
-            font-weight: 700;
+            color: #0f172a;
+            font-weight: 800;
         }
         .metric-desc {
             font-size: 0.8rem;
@@ -54,11 +54,11 @@ st.markdown("""
             font-weight
         }
         
-       .sidebar-label {
-            font-size: 1.3rem !important;
-            font-weight: 700 !important;
-            color: #ffffff !important;
-            padding-bottom: 5px;
+       .sidebar-title-fix {
+            font-size: 1.4rem !important;
+            font-weight: 800 !important;
+            color: #0f172a !important;
+            letter-spacing: 0.5px;
             display: block;
         }
         
@@ -99,13 +99,11 @@ except FileNotFoundError:
 
 # 4. CONTROL PANEL SIDEBAR SELECTORS
 st.sidebar.markdown("""
-    <div style='text-align: center; padding-bottom: 10px;'>
-        <h2 style='color: #64ffda; margin-bottom: 0;'>HUB CONTROL</h2>
-        <p style='color: #8892b0; font-size: 0.8rem;'>AI SmartCity Dispatcher</p>
+    <div style='text-align: center; background-color: #f1f5f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #cbd5e1;'>
+        <span class='sidebar-title-fix'>HUB CONTROL</span>
+        <p style='color: #475569; font-size: 0.8rem; margin: 5px 0 0 0; font-weight: 500;'>AI SmartCity Dispatcher</p>
     </div>
-    <hr style='border-color: rgba(255,255,255,0.1); margin-top: 0;'>
 """, unsafe_allow_html=True)
-
 junction = st.sidebar.selectbox(
     "📍 Select Monitoring Station",
     options=[1, 2, 3, 4],
