@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import datetime
 import plotly.graph_objects as go
-import os
+
 
 # 1. PAGE LAYOUT & GROUNDWORK CONFIGURATION
 st.set_page_config(
@@ -65,9 +65,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 3. SECURELY LOAD DEPLOYED PRODUCTION ARTIFACTS
-import os
 @st.cache_resource
 def load_production_model():
+    import os
     base_dir = os.path.dirname(_file_)
     model_path = os.path.join(base_dir, 'traffic_production_model.pkl')
     return joblib.load(model_path)
