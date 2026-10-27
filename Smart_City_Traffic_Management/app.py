@@ -201,15 +201,24 @@ if generate_forecast:
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        margin=dict(l=15, r=15, t=10, b=10),
-        height=280,
+        margin=dict(l=15, r=15, t=40, b=10), # Added more top margin so the toolbar buttons don't overlap your text
+        height=320, # Slightly increased height so the buttons fit perfectly on mobile
         autosize=True,
         xaxis=dict(gridcolor='rgba(255,255,255,0.04)', tickangle=-45, color='#94a3b8', nticks=12),
         yaxis=dict(gridcolor='rgba(255,255,255,0.04)', color='#94a3b8', range=[min(predictions) - 10, max(predictions) + 10]),
         showlegend=False
     )
 
-    st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
+    # UPDATED CONFIG: Forces the camera, zoom out, zoom in, and reset options to stay visible permanently!
+    st.plotly_chart(
+        fig, 
+        use_container_width=True, 
+        config={
+            'displayModeBar': True,        # Forces the toolbar back onto the screen
+            'displaylogo': False,          # Hides the generic Plotly logo to keep it clean
+            'modeBarButtonsToRemove': []   # Keeps all default buttons active (PNG download, zoom, pan)
+        }
+    )
 
     # 7. Detailed Scrollable Log Matrix Block
     st.markdown("#### 📋 Scheduled Operational Grid Logs")
