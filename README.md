@@ -47,4 +47,4 @@ Explore the source code folders directly on GitHub, or interact with the live de
 
 ## 👤 Author
 *   **Shobhita Tiwari**
-*   *Data Science Intern — Upskill Campus*
+*   *Data Science Intern*
