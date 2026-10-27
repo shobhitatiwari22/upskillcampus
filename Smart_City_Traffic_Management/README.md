@@ -69,7 +69,17 @@ The model was trained on historical smart city grid logging profiles monitoring 
 Click on the linkable preview placeholder below to inspect the interface layout, metric components, and interactive graphing engine.
 
 <a href="https://smartcity-traffic-forecast.streamlit.app/" target="_blank">
-"<img width="1908" height="928" alt="image" src="https://github.com/user-attachments/assets/b6364a35-0e5f-46ca-9906-bdfebd0b4d42" />
+<img width="1893" height="916" alt="image" src="https://github.com/user-attachments/assets/367b9eb4-de1f-4afd-9a5c-9e9d8ac95e09" />
 </a>
 
+## Results: 
 
+<a href="https://smartcity-traffic-forecast.streamlit.app/" target="_blank">
+<img width="1880" height="887" alt="image" src="https://github.com/user-attachments/assets/2b754169-8d04-4094-ba80-9d1b1d0e00e4" />
+</a>
+
+---
+
+<a href="https://smartcity-traffic-forecast.streamlit.app/" target="_blank">
+<img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/5a369db9-9990-43ca-b2ac-85cf69bcd8b6" />
+</a>
