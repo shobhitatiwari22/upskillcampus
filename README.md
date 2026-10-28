@@ -10,10 +10,16 @@ Explore the source code folders directly on GitHub, or interact with the live de
 
 ### 🌾 1. Agriculture Crop Production Pipeline
 *   **📁 GitHub Source Code:** https://github.com/shobhitatiwari22/upskillcampus/tree/main/Agriculture_Crop_Production
-*   **🚀 Live Interactive App:** https://indian-crop-predictor.streamlit.app/
+    
+*   **📁 Report:** https://github.com/shobhitatiwari22/upskillcampus/blob/main/Agriculture_Crop_Production/AgricultureCropProduction_Shobhita_Tiwari_USC_UCT.pdf
+  
+*   **🚀 Live Interactive App:** https://indian-crop-predictor.streamlit.app/  
 
 ### 🏙️ 2. Smart City AI Traffic Hub
 *   **📁 GitHub Source Code:** https://github.com/shobhitatiwari22/upskillcampus/tree/main/Smart_City_Traffic_Management
+  
+*   **📁 Report:** https://github.com/shobhitatiwari22/upskillcampus/blob/main/Smart_City_Traffic_Management/SmartCityTrafficPatternDetection_Shobhita%20Tiwari_USC_UCT.pdf
+  
 *   **🚀 Live Interactive App:** https://smartcity-traffic-forecast.streamlit.app/
 ---
 
